@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+            <div id="exam">
+                <div id="exam-inside">
+                    <div id="indicator">
+                        <div></div>
+                    </div>
+                    <form onsubmit="gotoGrade()" action="grade.html">
+                        <h3>Lorem ipsum dolor sit amet ....... adipisicing elimmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmt. Quod, pariatur?</h3>
+                        <div id="choices">
+                            <div class="choice" onclick="check(this)">
+                                <label for="choice1">Lorem ipsum dolor sit.</label>
+                                <input type="radio" name="choice" id="choice1">
+                            </div>
+                            <div class="choice" onclick="check(this)">
+                                <label for="choice2">Lorem ipsum dolor sit.</label>
+                                <input type="radio" name="choice" id="choice2">
+                            </div>
+                            <div class="choice" onclick="check(this)">
+                                <label for="choice3">Lorem ipsum dolor sit.</label>
+                                <input type="radio" name="choice" id="choice3">
+                            </div>
+                            <div class="choice" onclick="check(this)">
+                                <label for="choice4">Lorem ipsum dolor sit.</label>
+                                <input type="radio" name="choice" id="choice4">
+                            </div>
+                        </div>
+                        <div id="exam-buttons">
+                            <div id="buttons-inner">
+                                <div id="previous" onclick="preQuestion()">previous</div>
+                                <div id="qNumber">1</div>
+                                <div id="next" onclick="nextQuestion()">next</div>
+                            </div>
+                            <div id="mark-btn" onclick="shuffleMark()">mark</div>
+                        </div>
+                        <input type="submit" value="submit" name="submit">
+                    </form>
+                </div>
+            </div>
+            
+            <div id="exam-aside">
+                <div id="timer">
+                    <h4><span>10</span>:<span>00</span></h4>
+                </div>
+                <div id="mark-list">
+                    <!-- <button>Quistion 1</button>
+                    <button>Quistion 2</button>
+                    <button>Quistion 3</button> -->
+                </div>
+                
+            </div>
+    </div>
+    
+    <script src="js/exam.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,328 @@
+@font-face {
+    font-family:'Mukta', sans-serif;;
+    src: url(https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+#indicator{
+    margin-inline: auto;
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #fff; 
+}
+#indicator>div{
+    width: 10%;
+    height: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-size: 35px 35px;
+    background-color: #6dcffb;
+}
+
+#exam{
+    flex: 80%;
+    background-color:#a3a3a3;
+    background-image:url(../images/back-school-witch-school-supplies.jpg);
+    background-blend-mode:overlay;
+    background-position: bottom;
+    background-size: cover;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#exam-inside{
+    width: 55%;
+    padding-bottom: 20px;
+    border: 1px solid #01427a ;
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#exam-aside{
+    flex: 20%;
+    border-left:2px solid #01427a;
+}
+#timer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #e14177;
+    font-size: 20px;
+    color: #fff;
+}
+#mark-list{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+#mark-list button{
+    width: 90%;
+    margin-inline: auto ;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #6dcffb;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 17px;
+    background-color:#6dcffb;
+    color: #01427a;
+    font-weight: 700;
+}
+
+#mark-list button:hover{
+    cursor: pointer;
+}
+
+h3{
+    text-align: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: #01427a;
+    font-weight: 700;
+    padding-inline: 10px;
+}
+#exam-buttons{
+    display: flex;
+    width: 350px;
+    height: 40px;
+    gap: 105px;
+    align-items: center;
+    margin-block: 10px;
+    font-weight: 500;
+}
+#buttons-inner{
+    display: flex;
+    width: 165px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#buttons-inner>div{
+    text-align: center;
+    height: 100%;
+    line-height: 40px;
+    padding-inline: 10px;
+}
+#next{
+    border-top: 1px solid #01427a;
+    border-bottom: 1px solid #01427a;
+    border-right: 1px solid #01427a;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+#previous{
+    border-top: 1px solid #01427a;
+    border-bottom: 1px solid #01427a;
+    border-left: 1px solid #01427a;
+    border-radius: 5px 0 0 5px ;
+    -webkit-border-radius: 5px 0 0 5px ;
+    -moz-border-radius: 5px 0 0 5px ;
+    -ms-border-radius: 5px 0 0 5px ;
+    -o-border-radius: 5px 0 0 5px ;
+}
+#next:hover, #previous:hover, #mark-btn:hover{
+    cursor: pointer;
+}
+#qNumber{
+    border: 1px solid #01427a;
+    background-color: #ffffff;
+    background-color: #6dcffb;
+}
+#mark-btn{
+    width: 80px;
+    background-color: #6dcffb;
+    color: #01427a;
+    font-weight: 700;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+input[type="submit"]{
+    margin-top: 5%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-style: none;
+    background-color: #e14177;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#choices{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 3);
+    margin-block: 30px;
+}
+.choice{
+    padding-inline: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    border:1px solid #01427a;
+    line-height: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type='radio'] {
+    box-sizing: border-box;
+    appearance: none;
+    border:1px solid #01427a;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius:2px ;
+    -webkit-border-radius:2px ;
+    -moz-border-radius:2px ;
+    -ms-border-radius:2px ;
+    -o-border-radius:2px ;
+}
+input[type='radio']:checked {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #01427a;
+    border:1px solid #01427a;
+    width: 20px;
+    height: 20px;
+    border-radius:2px ;
+    -webkit-border-radius:2px ;
+    -moz-border-radius:2px ;
+    -ms-border-radius:2px ;
+    -o-border-radius:2px ;
+}
+input[type='radio']:hover{
+    cursor: pointer;
+}
+#previous{
+    visibility: hidden;
+}
+.choice:hover{
+    cursor: pointer;
+    border: 3px solid #01427a;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .container{
+        height: 100vh;
+    }
+
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .container{
+        height: 100vh;
+    }
+    #exam-inside{
+        width: 100%;
+    }
+    form{
+        padding-inline: 20px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    body, html{
+        height: 200vh;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    #exam-inside{
+        width: 100%;
+    }
+    form{
+        padding-inline: 40px;
+        margin-top: 10px;
+        
+    }
+
+    #choices{
+        width: 100%;
+        height: 200px;
+        margin-block: 10px;
+        gap: calc(50px / 6);
+    }
+    #mark-list button{
+        width: 80%;
+
+    }
+    #exam-buttons{
+        width: 300px;
+        height: 40px;
+        gap: 60px;
+        margin-block: 10px;
+    }
+    input[type="submit"]{
+        margin-top: 10px;
+    }
+    #exam-aside{
+        flex: 20%;
+        border-left:0;
+    }
+
+
+}
+

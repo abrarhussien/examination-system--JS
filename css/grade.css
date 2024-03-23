@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.grade-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#6dcffb;
+    background-image: url("images/back-school-witch-school-supplies.jpg") ;
+    background-blend-mode:overlay;
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.grade{
+    background-color: #fff;    
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;    
+    gap: 10px;
+    box-shadow: 1px 1px 10px #239fd8;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    text-align: center;
+    width: 26%;
+    height: 40vh;
+    padding: 40px;
+
+}
+.grade h2{
+    line-height: 1.6;
+}
+.grade img{
+    height: 100px;    
+}
+h2{
+    color: #0c0c0d;
+}
+.user-name{
+    color: #e14177;
+}
+#grade{
+    color: green;
+}
+@media screen and (max-width: 1440px) and (min-width: 992px) {
+    .grade{
+        font-size: 20px;
+        width: 60%;
+        height: 43vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .grade{
+        font-size: 20px;
+        width: 60%;
+        height: 43vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .grade{
+        font-size: 18px;
+        width: 80%;
+        height: 43vh;
+        padding: 15px;
+        text-align: center;
+    }
+}
