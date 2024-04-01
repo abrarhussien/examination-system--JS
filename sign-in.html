@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="css/sign-in.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sign-container">
+            <div class="logo">
+                <img src="images/download.png" alt="">
+            </div>
+            <div class="sign-text">
+                <h3 class="sign-in">sign in</h3>
+                <h3 class="sign-up"><a href="sign-up.html">sign up</a></h3>
+            </div>
+            <form id="form2" action="index.html" onsubmit="return validateSignIn()">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="email2" type="email" name="email" placeholder="Email" id="email"
+                    pattern="[a-z]{2,14}@gmail.com" required>
+                <i class="fa-solid fa-lock"></i><i class="fa-solid fa-eye" id="eye" onclick='if (document.querySelector(".password").type === "password") { document.querySelector(".password").type = "text"; } else { document.querySelector(".password").type = "password"; }'></i>
+                <input id="password2" name="password" placeholder="Password" type="password" class="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <div id="message2" style="color: red;"></div>
+                <input id="sign_in" type="submit" value="Sign In">
+
+
+
+            </form>
+        </div>
+    </div>
+    <script src="js/signIn.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

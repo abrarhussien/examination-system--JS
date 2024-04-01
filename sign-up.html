@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/sign-in.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="logo">
+                <img src="images/download.png" alt="">
+            </div>
+            <div class="txt">
+                <h3 class="sign-in"><a href="sign-in.html">sign in</a></h3>
+                <h3 class="sign-up">sign up</h3>
+            </div>
+            <form id="form" action="sign-in.html" onsubmit="saveLocal()">
+                <i class="fa-solid fa-user" id="me"></i>
+                <input id="name" type="text" placeholder="Frist Name" pattern="[a-zA-Z]{5,15}" required>
+
+                <i class="fa-solid fa-user" id="me2"></i>                
+                <input id="name2" type="text" placeholder="Last Name" pattern="[a-zA-Z]{5,15}" required>
+
+                <i class="fa-solid fa-envelope" id="em"></i>
+                <input id="email" class="email" type="email" placeholder="Email"
+                    pattern="[a-z]{2,14}@gmail.com" required>
+                <i class="fa-solid fa-lock" id="lo"></i>
+                <input id="password" class="password" type="password" placeholder="Password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninput="validatePassword()" required>
+
+                <i class="fa-solid fa-lock" id="lo2"></i>
+                <input id="confirmPassword" class="password1" type="password" placeholder="Confirm Password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninput="validatePassword()" required>
+                <i class="fa-solid fa-eye" id="eye" onclick='if (document.querySelector(".password").type === "password") { document.querySelector(".password").type = "text"; } else { document.querySelector(".password").type = "password"; }'></i>
+                <i class="fa-solid fa-eye" id="eye1" onclick='if (document.querySelector(".password1").type === "password") { document.querySelector(".password1").type = "text"; } else { document.querySelector(".password1").type = "password"; }'></i>
+                <div id="message" style="color: red;"></div>
+                <button id="sign_up" class="newsub" type="submit">Sign Up</button>
+            </form>
+
+        </div>
+        <!-- <script>
+            function redirectToSignIn() {
+                location.replace("sign-in.html");
+            } -->
+        </script>
+        <script src="js/signUP.js"></script>
+        <script src="js/all.min.js"></script>
+
+</body>
+
+</html>

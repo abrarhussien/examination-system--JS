@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-color: #8296bb;
+  --main-color: rgb(45, 72, 99);
+}
+body{
+  background-color: white;
+}
+.container{
+  background-image: url("../images/imag.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: var(--button-color);
+  height: 100vh; 
+}
+a {
+  text-decoration: none;
+}
+
+.sign-container {
+  z-index: 9999;
+  width: 35%;
+  background-color: #fdfdfd;;
+  box-shadow: 2px 2px 10px #777;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+
+.sign-container .logo {
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+.container .sign-container .logo img {
+  width: 130px;
+}
+
+.sign-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 70%;
+  margin: auto;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  font-size: 25px;
+  color: #01427a;
+  text-transform: capitalize;
+  
+
+}
+
+.container .sign-container .sign-up a,
+.container .sign-container form div {
+  color: #01417ab1 ;
+}
+
+.container .sign-container .sign-up a:hover {
+  color: #01427a;
+  cursor: pointer;
+}
+
+.container .sign-container form {
+  display: grid;
+  width: 60%;
+  margin: 30px auto;
+  gap: 20px;
+  position: relative;
+}
+
+
+.container .sign-container form input {
+  padding: 10px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 19px;
+  outline: none;
+  position: relative;
+  border: #01427a 1px solid;
+  /* margin: 5px; */
+}
+
+.container .sign-container form svg {
+  position: absolute;
+  color: #01427a;
+  z-index: 3;
+}
+
+.container .sign-container form svg.fa-envelope {
+  top: 10px;
+  left: 16px;
+}
+
+.container .sign-container form svg.fa-lock {
+  top: 71px;
+  left: 16px;
+}
+
+#eye {
+  top: 72px;
+  left: 93%;
+  cursor: pointer;
+}
+
+.container .sign-container form div {
+  text-transform: capitalize;
+  margin-left: 15px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.container .sign-container form input[type="submit"] {
+  color: white;
+  font-weight: bold;
+  background-color: #01427a;
+  padding: 10px 35px;
+  /* width: fit-content; */
+  margin: auto;
+  cursor: pointer;
+}
+
+.container .sign-container form input[type="submit"]:hover {
+  background-color: var(--button-color);
+  border: 1px solid white;
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 992px) {
+  .sign-container {
+    width: 50%;
+  }
+  #eye1 , #eye{
+    left: 90%;
+
+  }
+
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .sign-container {
+    width: 70%;
+  }
+  #eye{
+    left: 90%;
+
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .sign-container {
+    width: 80%;
+  }
+
+  #eye{
+    left: 86%;
+
+  }
+  form{
+    margin-inline: auto;
+  }
+  input{
+    width: 100%;
+  }
+}
